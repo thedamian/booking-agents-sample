@@ -14,29 +14,28 @@ Modules:
 - main: FastAPI application and endpoints
 
 Usage:
-    cd src/api
-    uvicorn main:app --reload --host 0.0.0.0 --port 8000
+    uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
 """
 
 __all__ = [
     # Config
-    'settings',
+    "settings",
     # Database
-    'db',
-    'initialize_database',
-    'get_database_status',
+    "db",
+    "initialize_database",
+    "get_database_status",
     # Models
-    'Listing',
-    'SearchRequest',
-    'SearchResponse',
-    'ChatRequest',
-    'ChatResponse',
+    "Listing",
+    "SearchRequest",
+    "SearchResponse",
+    "ChatRequest",
+    "ChatResponse",
     # Search
-    'search_listings',
-    'get_search_capabilities',
+    "search_listings",
+    "get_search_capabilities",
     # Chat
-    'generate_chat_response',
+    "generate_chat_response",
     # Agents
-    'run_agent_query',
-    'is_multi_agent_available',
+    "run_agent_query",
+    "is_multi_agent_available",
 ]
